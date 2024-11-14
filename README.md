@@ -68,9 +68,19 @@ To run the **AnalysisExample_app.xlsm** file and use the associated Python scrip
 
    ![Python Installation Path](https://github.com/user-attachments/assets/b24992c4-c9bd-43e9-acbe-5b1633d87a0e)
 
+3. In the terminal type in pip install requiremnts.txt
+
+```bash
+pip install -r requirements.txt
+```
+
 ### Step 2: Install the xlwings Library
 
-To interface Python with Excel, install the **xlwings** library through these instructions : https://docs.xlwings.org/en/stable/addin.html
+To interface Python with Excel, install the **xlwings** library through these instructions : https://docs.xlwings.org/en/stable/addin.html but really just type into the terminal 
+
+```bash
+xlwings addin install
+```
 
 ## Using the Application
 
