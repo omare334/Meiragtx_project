@@ -1,9 +1,9 @@
 import xlwings as xw
-from Standards_class import SampleAnalysis 
-from Samples_class import calculate_vg_rx
-from Standards_class import calculate_dilution_summary
-from Samples_class import QPCRAnalysis
-from General import write_data_to_excel
+from Functions.Standards_class import SampleAnalysis 
+from Functions.Samples_class import calculate_vg_rx
+from Functions.Standards_class import calculate_dilution_summary
+from Functions.Samples_class import QPCRAnalysis
+from Functions.General import write_data_to_excel
 
 def main(ct_file_path='RawDataFile.xlsx', ct_sheet_name=0, ct_column_name='Cq', use_existing_values=False):
     # Open workbook in Excel (assuming function is called from within Excel)

@@ -1,6 +1,6 @@
-from Standards_class import SampleAnalysis
-from Standards_class import calculate_dilution_summary
-from General import write_data_to_excel
+from Functions.Standards_class import SampleAnalysis
+from Functions.Standards_class import calculate_dilution_summary
+from Functions.General import write_data_to_excel
 
 def main(ct_file_path, ct_sheet_name = 0 , ct_column_name = 'Cq'):
     # Open the workbook

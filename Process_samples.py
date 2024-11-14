@@ -1,6 +1,6 @@
 import pandas as pd
 import xlwings as xw
-from General import read_excel_to_df,format_column
+from Functions.General import read_excel_to_df,format_column
 
 def main():
     # exlcuding the first row if Exclude? is not in the header 
