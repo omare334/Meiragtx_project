@@ -38,14 +38,20 @@ These Python scripts are linked to the VBA buttons in Excel. They are designed t
 ### 3. Function Files
 These files include reusable functions for various tasks:
 
-- **`General.py`**  
-  Contains general functions for importing and exporting data, as well as for reading Excel files.
+- **`Function/General.py`**  
+  Contains general functions for importing and exporting data, as well as for reading Excel files function names are self-explanatory.
 
-- **`Standards_class.py`**  
+- **`Functions/Standards_class.py`**  
   Processes data related to the specification of filled wells.
+  
+    class SampleAnalysis: acts as a main function to derive a working df based on how wells have been filled out in the sheet 'PlateLayout.
 
-- **`Samples_class.py`**  
+    def calculate_dilution_summary(df): Calculates the dilution summary for the standards 
+
+- **`Functions/Samples_class.py`**  
   Contains functions to handle sample data and calculate averages for the samples.
+
+     Class QPCRanalysis: Allows the user to calculate slope,intercept, efficiency and RSQ
 
 ---
 
