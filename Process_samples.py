@@ -3,6 +3,7 @@ import xlwings as xw
 from Functions.General import read_excel_to_df,format_column
 
 def main():
+    '''This will calculate means and averages for sample data'''
     # exlcuding the first row if Exclude? is not in the header 
     df = read_excel_to_df(sheet_name="Samples", header_range="A4:G4", data_range_start="A5")
     wb = xw.Book.caller()

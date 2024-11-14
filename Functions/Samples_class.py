@@ -5,6 +5,7 @@ import numpy as np
 from scipy.stats import linregress
 
 class QPCRAnalysis:
+    "class to caclulate RSQ ,effciencey , slope and intercept"
     def __init__(self, df):
         """
         Initializes the class with a DataFrame containing 'Log template Conc.' and 'CT' values.
@@ -37,7 +38,7 @@ class QPCRAnalysis:
         return self.slope, self.intercept 
     
 def calculate_vg_rx(df, intercept, slope):
-    # Define a function for the formula to apply to each row where Sample Type == "Sample"
+    # function to caclulate rx well and /ml values for VG used in sample analysis and summary stats
     def calculate_dilution(ct):
         if pd.isna(ct) or ct == "":
             return None
